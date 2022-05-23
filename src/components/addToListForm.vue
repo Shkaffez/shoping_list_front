@@ -6,7 +6,11 @@
       placeholder="например редиска"
       v-model="item.text"
     ></va-input>
-    <va-button size="small" icon-right="create" @click="addToList"
+    <va-button
+      size="small"
+      icon-right="create"
+      @click="addToList"
+      style="margin-bottom: 20px"
       >Добавить</va-button
     >
   </form>
