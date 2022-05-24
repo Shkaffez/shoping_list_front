@@ -1,14 +1,22 @@
 <template>
-  <div class="container">
-    <add-to-list-form @add="add" style="margin-top: 10px" />
-    <add-by-icon-click @add="add" />
-    <to-buy-list
-      :purchasesList="purchasesList"
-      @remove="remove"
-      @removeAll="removeAll"
-      @toggleDone="toggleDone"
-      class="toByList"
-    />
+  <div class="app">
+    <div class="container">
+      <h1 style="text-align: center" class="display-1">
+        Составь список покупок быстро и удобно!
+      </h1>
+
+      <va-collapse color="#A6B1E1" header="Составить список">
+        <add-to-list-form @add="add" style="margin-top: 10px" />
+        <add-by-icon-click @add="add" />
+      </va-collapse>
+      <to-buy-list
+        :purchasesList="purchasesList"
+        @remove="remove"
+        @removeAll="removeAll"
+        @toggleDone="toggleDone"
+        class="toByList"
+      />
+    </div>
   </div>
 </template>
 
@@ -52,6 +60,11 @@ export default {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: #dcd6f7;
 }
 
 .container {

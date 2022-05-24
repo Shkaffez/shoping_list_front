@@ -1,5 +1,5 @@
 <template>
-  <va-accordion style="width: 400px">
+  <va-accordion style="width: 400px display: flex">
     <va-collapse header="основные продукты">
       <div @click="addToList">
         <button type="button">
@@ -21,6 +21,12 @@
           <img class="img" src="@/assets/печенье.png" name="печенье" />
         </button>
         <button type="button">
+          <img class="img" src="@/assets/сладости.png" name="сладости" />
+        </button>
+        <button type="button">
+          <img class="img" src="@/assets/сахар.png" name="сахар" />
+        </button>
+        <button type="button">
           <img class="img" src="@/assets/рыба.png" name="рыба" />
         </button>
         <button type="button">
@@ -28,6 +34,24 @@
         </button>
         <button type="button">
           <img class="img" src="@/assets/яйца.png" name="яйца" />
+        </button>
+        <button type="button">
+          <img class="img" src="@/assets/алкоголь.png" name="алкоголь" />
+        </button>
+        <button type="button">
+          <img class="img" src="@/assets/вино.png" name="вино" />
+        </button>
+        <button type="button">
+          <img class="img" src="@/assets/пиво.png" name="пиво" />
+        </button>
+        <button type="button">
+          <img class="img" src="@/assets/газировка.png" name="газировка" />
+        </button>
+        <button type="button">
+          <img class="img" src="@/assets/крупы.png" name="крупы" />
+        </button>
+        <button type="button">
+          <img class="img" src="@/assets/мука.png" name="мука" />
         </button>
       </div>
     </va-collapse>
@@ -103,7 +127,24 @@
     </va-collapse>
 
     <va-collapse header="товары для дома">
-      <div @click="addToList"></div>
+      <div @click="addToList">
+        <button type="button">
+          <img class="img" src="@/assets/бумага.png" name="туалетная бумага" />
+        </button>
+        <button type="button">
+          <img class="img" src="@/assets/мыло.png" name="мыло" />
+        </button>
+        <button type="button">
+          <img class="img" src="@/assets/паста.png" name="зубная паста" />
+        </button>
+        <button type="button">
+          <img
+            class="img"
+            src="@/assets/порошок.png"
+            name="стиральный порошок"
+          />
+        </button>
+      </div>
     </va-collapse>
   </va-accordion>
 </template>

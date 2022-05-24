@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="title__block" style="margin-bottom: 10px">
-      <h1>Список покупок</h1>
-      <va-button @click.stop="$emit('removeAll')" color="danger" size="small"
+      <h3 class="display-3">Список покупок</h3>
+      <va-button @click.stop="$emit('removeAll')" color="#985F6F" size="small"
         >очистить список</va-button
       >
     </div>

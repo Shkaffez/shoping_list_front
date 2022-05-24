@@ -7,10 +7,10 @@
       v-model="item.text"
     ></va-input>
     <va-button
-      size="small"
       icon-right="create"
       @click="addToList"
       style="margin-bottom: 20px"
+      color="#4E4C67"
       >Добавить</va-button
     >
   </form>
