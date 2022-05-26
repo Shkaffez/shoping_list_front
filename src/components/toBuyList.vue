@@ -1,20 +1,25 @@
 <template>
   <div>
-    <div class="title__block" style="margin-bottom: 10px">
-      <h3 class="display-3">Список покупок</h3>
-      <va-button @click.stop="$emit('removeAll')" color="#985F6F" size="small"
-        >очистить список</va-button
-      >
+    <div v-if="purchasesList.length > 0">
+      <div class="title__block" style="margin-bottom: 10px">
+        <h3 class="display-3">Список покупок</h3>
+        <va-button @click.stop="$emit('removeAll')" color="#985F6F" size="small"
+          >очистить список</va-button
+        >
+      </div>
+      <transition-group name="purchases-list">
+        <to-buy-element
+          v-for="item in purchasesList"
+          :item="item"
+          :key="item.id"
+          @remove="$emit('remove', item)"
+          @toggleDone="$emit('toggleDone', item)"
+        />
+      </transition-group>
     </div>
-    <transition-group name="purchases-list">
-      <to-buy-element
-        v-for="item in purchasesList"
-        :item="item"
-        :key="item.id"
-        @remove="$emit('remove', item)"
-        @toggleDone="$emit('toggleDone', item)"
-      />
-    </transition-group>
+    <h3 style="margin-top: 20px" v-else class="display-3">
+      Список покупок пока пуст...
+    </h3>
   </div>
 </template>
 

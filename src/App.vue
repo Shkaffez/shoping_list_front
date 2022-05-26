@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <div class="container">
-      <h1 style="text-align: center" class="display-1">
+      <h1 style="text-align: center" class="display-1 mainTitle">
         Составь список покупок быстро и удобно!
       </h1>
 
@@ -67,6 +67,9 @@ export default {
   background-color: #dcd6f7;
 }
 
+.mainTitle {
+  margin-bottom: 20px;
+}
 .container {
   padding: 0 15px;
 }

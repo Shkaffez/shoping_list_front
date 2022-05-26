@@ -8,7 +8,7 @@
     <va-button
       @click.stop="$emit('remove', item)"
       icon="block"
-      color="danger"
+      color="#985F6F"
       size="small"
     />
   </div>

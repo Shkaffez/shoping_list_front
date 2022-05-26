@@ -1,6 +1,6 @@
 <template>
-  <va-accordion style="width: 400px display: flex">
-    <va-collapse header="основные продукты">
+  <va-accordion style="width: auto heigth: auto display: flex">
+    <va-collapse color="#A6B1E1" header="основные продукты">
       <div @click="addToList">
         <button type="button">
           <img class="img" src="@/assets/сыр.png" name="сыр" />
@@ -56,7 +56,7 @@
       </div>
     </va-collapse>
 
-    <va-collapse header="овощи">
+    <va-collapse color="#A6B1E1" header="овощи">
       <div @click="addToList">
         <button type="button">
           <img class="img" src="@/assets/морковь.png" name="морковь" />
@@ -82,7 +82,7 @@
       </div>
     </va-collapse>
 
-    <va-collapse header="фрукты">
+    <va-collapse color="#A6B1E1" header="фрукты">
       <div @click="addToList">
         <button type="button">
           <img class="img" src="@/assets/яблоки.png" name="яблоки" />
@@ -126,7 +126,7 @@
       </div>
     </va-collapse>
 
-    <va-collapse header="товары для дома">
+    <va-collapse color="#A6B1E1" header="товары для дома">
       <div @click="addToList">
         <button type="button">
           <img class="img" src="@/assets/бумага.png" name="туалетная бумага" />
